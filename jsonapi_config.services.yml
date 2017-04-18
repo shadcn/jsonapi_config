@@ -1,0 +1,7 @@
+services:
+  plugin.manager.jsonapi_config:
+    class: Drupal\jsonapi_config\Plugin\Type\JsonapiResourcePluginManager
+    arguments: ['@container.namespaces', '@cache.discovery', '@module_handler']
+  jsonapi_config.resource_type.repository:
+    class: Drupal\jsonapi_config\ResourceType\ResourceTypeRepository
+    arguments: ['@entity_type.manager', '@entity_type.bundle.info', '@plugin.manager.jsonapi_config']

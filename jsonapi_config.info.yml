@@ -1,0 +1,8 @@
+name: JSON API Config
+type: module
+description: Configuration for the JSON API module.
+core: 8.x
+package: Web services
+dependencies:
+  - drupal:system (>=8.2)
+  - serialization
